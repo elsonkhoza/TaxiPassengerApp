@@ -2,17 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/profile_menu"
-        android:icon="@drawable/person_48px"
-        android:title="@string/profile" />
-    <item
         android:id="@+id/dashboard_menu"
         android:enabled="true"
-        android:icon="@drawable/grid_view_48px"
+        android:icon="@drawable/dashboard_icon_selector"
         android:title="@string/dashboard" />
     <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/profile_icon_selector"
+        android:title="@string/profile" />
+
+    <item
         android:id="@+id/settings_menu"
-        android:icon="@drawable/settings_48px"
+        android:icon="@drawable/settings_icon_selector"
         android:title="@string/settings" />
 
 </menu>

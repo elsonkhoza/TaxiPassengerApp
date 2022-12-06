@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void iniViews() {
         bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
