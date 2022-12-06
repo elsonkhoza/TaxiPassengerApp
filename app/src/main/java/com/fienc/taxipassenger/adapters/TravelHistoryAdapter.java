@@ -62,13 +62,13 @@ public class TravelHistoryAdapter extends RecyclerView.Adapter<TravelHistoryAdap
     }
 
     public static class RouteViewHolder extends RecyclerView.ViewHolder {
-        public TextView firstLoc,secLoc, price,date;
+        public TextView firstLoc, secLoc, price, date;
         public TravelHistory route;
 
         public RouteViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            date=itemView.findViewById(R.id.dates_history);
+            date = itemView.findViewById(R.id.dates_history);
             firstLoc = itemView.findViewById(R.id.first_location_history);
             secLoc = itemView.findViewById(R.id.second_location_history);
             price = itemView.findViewById(R.id.route_price_history);
@@ -81,7 +81,7 @@ public class TravelHistoryAdapter extends RecyclerView.Adapter<TravelHistoryAdap
             date.setText(route.getDate());
             firstLoc.setText(route.getFirstLocation().getName());
             secLoc.setText(route.getSecondLocation().getName());
-            price.setText("R"+route.getCost());
+            price.setText("R" + route.getCost());
 
         }
     }

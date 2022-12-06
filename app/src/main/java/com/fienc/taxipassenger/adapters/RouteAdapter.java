@@ -62,7 +62,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
     }
 
     public static class RouteViewHolder extends RecyclerView.ViewHolder {
-        public TextView firstLoc,secLoc, price;
+        public TextView firstLoc, secLoc, price;
         public RouteFare route;
 
         public RouteViewHolder(@NonNull View itemView) {
@@ -78,7 +78,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
 
             firstLoc.setText(route.getFirstLocation().getName());
             secLoc.setText(route.getSecondLocation().getName());
-            price.setText("R"+route.getCost());
+            price.setText("R" + route.getCost());
 
         }
     }
