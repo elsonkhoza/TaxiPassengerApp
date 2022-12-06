@@ -23,40 +23,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        iniViews();
+
     }
 
 
-    private void iniViews()
-    {
 
-        email=findViewById(R.id.email_value_login);
-        password=findViewById(R.id.password_value_login);
-
-        loginBtn=findViewById(R.id.login_btn);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
-
-
-            }
-        });
-
-
-        forgotPassword=findViewById(R.id.forgot_pass);
-        registerNew=findViewById(R.id.register_new);
-        registerNew.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               Intent intent=new Intent(LoginActivity.this,RegisterNamesActivity.class);
-                startActivity(intent);
-
-            }
-        });
-    }
 
 
 }
