@@ -24,7 +24,10 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="cont">Continue</string>
     <string name="email_only">Email</string>
-    <string name="phone_number">Phone Number</string>
+    <string name="phone_number">Phone number</string>
+
+    <string name="login_text">Please select your country code and enter your phone number.</string>
+    <string name="login_heading">Enter your phone number</string>
 
     <string name="taxi_on_map">Taxi location</string>
     <string name="taxi_information">Taxi information</string>

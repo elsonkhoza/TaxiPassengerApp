@@ -14,7 +14,6 @@ import com.fienc.taxipassenger.models.RouteFare;
 import java.util.ArrayList;
 
 
-
 public class FaresActivity extends AppCompatActivity {
 
 
@@ -44,38 +43,38 @@ public class FaresActivity extends AppCompatActivity {
     private ArrayList<RouteFare> loadRoutes() {
 
 
-        ArrayList<RouteFare> list=new ArrayList<>();
+        ArrayList<RouteFare> list = new ArrayList<>();
 
-        list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
-          list.add(new RouteFare("khjvfb",new Location("Ximhungwe","jjvf"),
-                new Location("Thulamahashe","hghdgd"),24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
+        list.add(new RouteFare("khjvfb", new Location("Ximhungwe", "jjvf"),
+                new Location("Thulamahashe", "hghdgd"), 24));
 
 
         return list;

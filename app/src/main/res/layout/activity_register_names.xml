@@ -32,8 +32,7 @@
             android:id="@+id/name_new_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            />
+            android:textSize="16dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,8 +48,7 @@
             android:id="@+id/surname_new_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            />
+            android:textSize="16dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,8 +87,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/facebook_login_btn"
         app:layout_constraintTop_toBottomOf="@id/or_login"
-        android:src="@drawable/google_logo"
-        />
+        android:src="@drawable/google_logo" />
+
     <ImageView
         android:id="@+id/facebook_login_btn"
         android:layout_width="36dp"
@@ -99,7 +97,6 @@
         app:layout_constraintStart_toEndOf="@id/google_login_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/or_login"
-        android:src="@drawable/facebook_icon"
-        />
+        android:src="@drawable/facebook_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

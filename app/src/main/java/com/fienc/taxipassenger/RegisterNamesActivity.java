@@ -31,8 +31,8 @@ public class RegisterNamesActivity extends AppCompatActivity {
                 Intent intent = new Intent(RegisterNamesActivity.this,
                         RegisterActivity.class);
 
-                intent.putExtra("name",name.getText().toString());
-                intent.putExtra("surname",surname.getText().toString());
+                intent.putExtra("name", name.getText().toString());
+                intent.putExtra("surname", surname.getText().toString());
 
                 startActivity(intent);
 

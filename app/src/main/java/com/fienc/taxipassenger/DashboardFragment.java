@@ -43,8 +43,8 @@ public class DashboardFragment extends Fragment {
         fares.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                  Intent intent=new Intent(getContext(),FaresActivity.class);
-                  startActivity(intent);
+                Intent intent = new Intent(getContext(), FaresActivity.class);
+                startActivity(intent);
             }
         });
         history = view.findViewById(R.id.historyCardView);

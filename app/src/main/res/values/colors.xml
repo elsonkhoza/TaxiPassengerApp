@@ -4,9 +4,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-   <!-- <color name="primary_color">#3EB489</color>-->
+    <!-- <color name="primary_color">#3EB489</color>-->
 
-   <color name="primary_color">#363640</color>
+    <color name="primary_color">#363640</color>
     <color name="text_primary_color">#363640</color>
     <color name="low_primary_color">#838395</color>
     <color name="secondary_color">#3e6cb4</color>

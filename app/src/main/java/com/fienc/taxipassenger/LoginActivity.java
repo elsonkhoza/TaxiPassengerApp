@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,9 +13,8 @@ import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button loginBtn;
-    private TextInputEditText email, password;
-    private TextView forgotPassword,registerNew;
+    private Button nextBtn;
+    private TextInputEditText phone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +22,21 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Objects.requireNonNull(getSupportActionBar()).hide();
 
+        initViews();
+
+
     }
 
-
-
+    private void initViews() {
+        nextBtn = findViewById(R.id.next_btn_login);
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
 
 }
