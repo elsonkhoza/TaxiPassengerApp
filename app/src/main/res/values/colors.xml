@@ -7,8 +7,10 @@
    <!-- <color name="primary_color">#3EB489</color>-->
 
    <color name="primary_color">#363640</color>
+    <color name="text_primary_color">#363640</color>
+    <color name="low_primary_color">#838395</color>
     <color name="secondary_color">#3e6cb4</color>
-    <color name="background_color">#660099</color>
+    <color name="background_color">#838395</color>
 
     <color name="light_dark">#808080</color>
     <color name="red">#ff1a40</color>
