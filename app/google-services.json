@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "645024078880",
+    "project_id": "taxi-plus-plus-app",
+    "storage_bucket": "taxi-plus-plus-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645024078880:android:1e38c3cda2c5a5fcdff045",
+        "android_client_info": {
+          "package_name": "com.fienc.taxipassenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645024078880-j7chnbhp263qsjqudnds79p8buvd6m8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUQ13F6pLMdzbkD5ACKli_ZScVtfvjg24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645024078880-j7chnbhp263qsjqudnds79p8buvd6m8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645024078880:android:8062e22fd5ea6a32dff045",
+        "android_client_info": {
+          "package_name": "za.co.taxiplusplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645024078880-j7chnbhp263qsjqudnds79p8buvd6m8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUQ13F6pLMdzbkD5ACKli_ZScVtfvjg24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645024078880-j7chnbhp263qsjqudnds79p8buvd6m8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
