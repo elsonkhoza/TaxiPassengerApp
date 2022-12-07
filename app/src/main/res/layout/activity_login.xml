@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/login_heading" />
 
     <com.hbb20.CountryCodePicker
-        android:id="@+id/countryCodeHolder"
+        android:id="@+id/country_code_picker_login"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
@@ -47,6 +47,8 @@
         app:ccp_contentColor="@color/white"
         app:ccp_defaultNameCode="ZA"
         app:ccp_showFlag="false"
+
+        app:ccp_autoFormatNumber="true"
 
         app:ccp_showFullName="true"
         app:ccp_showNameCode="false"
@@ -60,25 +62,22 @@
         android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:hint="@string/phone_number"
+        app:layout_constraintTop_toBottomOf="@id/country_code_picker_login"
 
-        android:outlineSpotShadowColor="@color/white"
-        android:textColorHint="@color/background_color"
-        app:boxStrokeColor="@color/input_stoke_color_login"
-        app:hintTextColor="@color/background_color"
-        app:layout_constraintTop_toBottomOf="@id/countryCodeHolder"
-        app:placeholderTextColor="@color/background_color"
-
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/low_primary_color"
 
         >
 
 
         <com.google.android.material.textfield.TextInputEditText
 
+            android:id="@+id/phone_input_login_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+android:gravity="bottom"
             android:inputType="phone"
-            android:paddingStart="10dp"
+
             android:textColor="@color/white"
 
 

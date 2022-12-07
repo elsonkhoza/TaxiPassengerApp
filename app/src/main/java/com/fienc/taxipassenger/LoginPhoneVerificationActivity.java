@@ -12,13 +12,20 @@ import java.util.Objects;
 public class LoginPhoneVerificationActivity extends AppCompatActivity {
 
 
-    Button verifyBtn;
+    private Button verifyBtn;
+    private String phoneNumber;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_phone_verification);
         Objects.requireNonNull(getSupportActionBar()).hide();
+
+        Intent intent=getIntent();
+        if(intent!=null) {
+            phoneNumber=(String) intent.getExtras().get("phone-number");
+        }
 
 
         verifyBtn = findViewById(R.id.verify_btn_login);

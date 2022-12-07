@@ -28,6 +28,7 @@
 
     <string name="login_text">Please select your country code and enter your phone number.</string>
     <string name="login_heading">Enter your phone number</string>
+    <string name="phone_error_msg">Enter a valid number</string>
 
     <string name="verify">Verify</string>
     <string name="phone_verify">Phone number verification</string>
