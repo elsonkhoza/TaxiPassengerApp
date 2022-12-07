@@ -56,9 +56,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
                             android:text="@string/taxi_on_map"
                             android:textColor="@color/text_primary_color"
-                            android:layout_marginStart="5dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/imageView2"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -66,10 +66,10 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:src="@drawable/navigate_next_48px"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/navigate_next_48px" />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:layout_width="match_parent"
@@ -100,9 +100,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/text_primary_color"
-                            android:text="@string/driver_information"
                             android:layout_marginStart="5dp"
+                            android:text="@string/driver_information"
+                            android:textColor="@color/text_primary_color"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/info_icon"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -110,10 +110,10 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:src="@drawable/navigate_next_48px"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/navigate_next_48px" />
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -164,8 +164,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/travel"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -202,8 +202,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/fare"
+                            android:textColor="@color/white"
 
 
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -244,8 +244,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/message"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -281,8 +281,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/events"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -318,8 +318,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/history"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -355,8 +355,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/specials"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -393,8 +393,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/contacts"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -430,8 +430,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/news"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -467,8 +467,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/long_travel"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -504,8 +504,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
                             android:text="@string/jobs"
+                            android:textColor="@color/white"
 
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"

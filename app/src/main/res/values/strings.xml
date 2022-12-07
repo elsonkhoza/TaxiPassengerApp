@@ -29,6 +29,15 @@
     <string name="login_text">Please select your country code and enter your phone number.</string>
     <string name="login_heading">Enter your phone number</string>
 
+    <string name="verify">Verify</string>
+    <string name="phone_verify">Phone number verification</string>
+    <string name="code_was_sent">A verification code was sent to you via SMS,
+        enter the code to verify your number.</string>
+    <string name="not_get_code">Resend code?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name_and_surname_signup">Name and surname sign up</string>
+    <string name="sign_up_msg">Finally enter your name and surname.</string>
+
     <string name="taxi_on_map">Taxi location</string>
     <string name="taxi_information">Taxi information</string>
     <string name="driver_information">Driver information</string>

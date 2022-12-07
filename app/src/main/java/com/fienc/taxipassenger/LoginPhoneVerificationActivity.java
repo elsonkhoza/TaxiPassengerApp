@@ -7,37 +7,29 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.textfield.TextInputEditText;
-
 import java.util.Objects;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginPhoneVerificationActivity extends AppCompatActivity {
 
-    private Button nextBtn;
-    private TextInputEditText phone;
+
+    Button verifyBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_phone_verification);
         Objects.requireNonNull(getSupportActionBar()).hide();
 
-        initViews();
 
-
-    }
-
-    private void initViews() {
-        nextBtn = findViewById(R.id.next_btn_login);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
+        verifyBtn = findViewById(R.id.verify_btn_login);
+        verifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,
-                        LoginPhoneVerificationActivity.class);
+
+                Intent intent = new Intent(LoginPhoneVerificationActivity.this,
+                        RegisterNamesActivity.class);
                 startActivity(intent);
             }
         });
     }
-
-
 }

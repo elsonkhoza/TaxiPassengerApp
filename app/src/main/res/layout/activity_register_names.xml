@@ -4,99 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_color"
     android:padding="20dp"
     tools:context=".RegisterNamesActivity">
 
+
     <TextView
-        android:id="@+id/register_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/signup_heading"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/register"
-        android:textColor="@color/primary_color"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="@string/name_and_surname_signup"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_new"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/name"
-        app:layout_constraintTop_toBottomOf="@id/register_text">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_new_value"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/surname_new"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="@string/surname"
-        app:layout_constraintTop_toBottomOf="@id/name_new">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/surname_new_value"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/continue_reg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/app_button"
-        android:text="@string/cont"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surname_new" />
-
-
     <TextView
-        android:id="@+id/or_login"
+        android:id="@+id/signup_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
-        android:text="@string/or_sign_up"
-
-
+        android:layout_marginRight="50dp"
+        android:text="@string/sign_up_msg"
+        android:textAlignment="center"
+        android:textColor="@color/low_primary_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/continue_reg" />
+        app:layout_constraintTop_toBottomOf="@id/signup_heading" />
 
-    <ImageView
-        android:id="@+id/google_login_btn"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/facebook_login_btn"
-        app:layout_constraintTop_toBottomOf="@id/or_login"
-        android:src="@drawable/google_logo" />
 
-    <ImageView
-        android:id="@+id/facebook_login_btn"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
+    <LinearLayout
+
+        android:id="@+id/name_surname_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/signup_msg">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:hint="@string/name"
+            android:textColorHint="@color/low_primary_color"
+            app:hintTextColor="@color/white"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_signup_vale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:hint="@string/surname"
+            android:textColorHint="@color/low_primary_color"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/surname_signup_vale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@id/google_login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/or_login"
-        android:src="@drawable/facebook_icon" />
+        android:background="@drawable/corner_radius_4dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_color"
+        app:layout_constraintTop_toBottomOf="@id/name_surname_fields" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
