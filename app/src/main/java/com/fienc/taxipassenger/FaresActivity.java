@@ -1,8 +1,11 @@
 package com.fienc.taxipassenger;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,6 +23,9 @@ public class FaresActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RouteAdapter routeAdapter;
 
+    SearchView fromSearch,toSearch;
+    ConstraintLayout toSearchLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +42,20 @@ public class FaresActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(routeAdapter);
-        recyclerView.addItemDecoration(new SpaceDecoration(10));
+        recyclerView.addItemDecoration(new SpaceDecoration(5));
 
+    }
+
+
+    private void initViews()
+    {
+        fromSearch=findViewById(R.id.from_search_view_fares);
+        toSearchLayout=findViewById(R.id.to_search_layout_fares);
+
+        toSearchLayout.setVisibility(View.VISIBLE);
+
+
+        toSearch=findViewById(R.id.to_search_view_fares);
     }
 
     private ArrayList<RouteFare> loadRoutes() {

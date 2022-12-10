@@ -367,6 +367,7 @@
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/contact_list_card"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_rowWeight="1"

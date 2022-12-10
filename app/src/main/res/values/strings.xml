@@ -31,6 +31,11 @@
     <string name="phone_error_msg">Enter a valid number</string>
 
     <string name="verify">Verify</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="verify_not_robot">Verifying if you are not a robot.. Your browser will open
+    shortly to complete this process.
+    </string>
+
     <string name="phone_verify">Phone number verification</string>
     <string name="code_was_sent">A verification code was sent to you via SMS,
         enter the code to verify your number.</string>

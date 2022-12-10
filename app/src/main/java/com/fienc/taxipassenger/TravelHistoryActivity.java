@@ -40,7 +40,7 @@ public class TravelHistoryActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(routeAdapter);
-        recyclerView.addItemDecoration(new SpaceDecoration(10));
+        recyclerView.addItemDecoration(new SpaceDecoration(5));
     }
 
     private ArrayList<TravelHistory> loadRoutes() {

@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="@string/phone_verify"
+        android:text="@string/please_wait"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -27,7 +27,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
-        android:text="@string/code_was_sent"
+        android:text="@string/verify_not_robot"
         android:textAlignment="center"
         android:textColor="@color/low_primary_color"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal"
         android:baselineAligned="false"
+        android:orientation="horizontal"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
+
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -60,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
+                android:maxLength="1"
                 android:textColor="@color/white"
 
                 />
@@ -79,9 +81,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:textColor="@color/white"
-
-                />
+                android:maxLength="1"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,9 +99,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:textColor="@color/white"
-
-                />
+                android:maxLength="1"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,9 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:textColor="@color/white"
-
-                />
+                android:maxLength="1"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -135,9 +134,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:textColor="@color/white"
-
-                />
+                android:maxLength="1"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,9 +151,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:textColor="@color/white"
-
-                />
+                android:maxLength="1"
+                android:textColor="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -168,6 +165,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/corner_radius_4dp"
         android:backgroundTint="@color/white"
+        android:onClick="onVerifyButtonClicked"
         android:text="@string/verify"
         android:textAllCaps="false"
         android:textColor="@color/primary_color"
@@ -184,5 +182,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/verify_btn_login" />
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+
+        android:id="@+id/progress_circular_verify"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:indicatorSize="50dp"
+        app:trackColor="@color/low_primary_color"
+        app:indicatorColor="@color/white"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

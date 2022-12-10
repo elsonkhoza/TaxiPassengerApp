@@ -36,7 +36,17 @@ public class DashboardFragment extends Fragment {
     }
 
     private void dashboardCardViews() {
-        MaterialCardView travel, fares, messages, history;
+        MaterialCardView travel, fares, messages, history,contacts;
+
+        contacts=view.findViewById(R.id.contact_list_card);
+        contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(), ContactListActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         fares = view.findViewById(R.id.faresCardView);
