@@ -30,7 +30,7 @@ public class FaresActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fares);
-        getSupportActionBar().setTitle(getString(R.string.fare));
+       // getSupportActionBar().setTitle(getString(R.string.fare));
 
         recyclerView = findViewById(R.id.recycler_view);
         routeAdapter = new RouteAdapter(loadRoutes());

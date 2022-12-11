@@ -26,7 +26,7 @@ public class TravelHistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel_history);
 
-        getSupportActionBar().setTitle(getString(R.string.history));
+      //  getSupportActionBar().setTitle(getString(R.string.history));
 
         recyclerView = findViewById(R.id.recycler_view_history);
         ArrayList<TravelHistory> list = loadRoutes();

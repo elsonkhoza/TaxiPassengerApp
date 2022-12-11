@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:background="@color/primary_color"
+   android:background="@color/white"
     tools:context=".ContactListActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/search_shape"
+
         app:layout_constraintTop_toTopOf="parent">
 
 
@@ -22,7 +22,7 @@
             android:id="@+id/from_search_view_fares"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
+            android:background="@drawable/search_shape"
             android:layout_margin="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

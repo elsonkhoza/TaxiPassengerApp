@@ -16,7 +16,7 @@
             android:id="@+id/contact_widget_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/plk"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,8 +26,9 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@id/contact_widget_icon"
             android:text="Vuyo Malema"
-            android:textColor="@color/white"
             android:textStyle="bold"
+            android:textColor="@color/black"
+
             android:layout_marginStart="10dp"
             app:layout_constraintTop_toTopOf="@id/contact_widget_icon"
             />
@@ -36,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ximhungwe Taxi Rank"
-            android:textColor="@color/white"
+            android:textColor="@color/low_primary_color"
             app:layout_constraintStart_toEndOf="@id/contact_widget_icon"
             app:layout_constraintTop_toBottomOf="@id/contact_name_list"
             android:layout_marginStart="10dp"
@@ -46,7 +47,8 @@
             android:id="@+id/contact_next_btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/chevron_right_48px"
+            android:visibility="gone"
+            android:src="@drawable/navigate_next_48px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -1,5 +1,7 @@
 package com.fienc.taxipassenger;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -20,11 +22,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniViews();
+       // updateActionBar();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new DashboardFragment()).commit();
-        getSupportActionBar().setTitle(getString(R.string.dashboard));
+    }
 
+    private void updateActionBar()
+    {
+        getSupportActionBar().setTitle(getString(R.string.dashboard));
+        ColorDrawable colorDrawable
+                = new ColorDrawable(Color.parseColor("#FFFFFF"));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
     }
 
@@ -32,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private void iniViews() {
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setItemIconTintList(null);
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -41,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.profile_menu: {
                         selectedFragment = new ProfileFragment();
-                        getSupportActionBar().setTitle(getString(R.string.profile));
 
                         break;
                     }
@@ -49,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                         _menu:
                         {
                             selectedFragment = new DashboardFragment();
-                            getSupportActionBar().setTitle(getString(R.string.dashboard));
 
                             break;
                         }
@@ -57,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         _menu:
                         {
                             selectedFragment = new SettingsFragment();
-                            getSupportActionBar().setTitle(getString(R.string.settings));
+
                             break;
                         }
 

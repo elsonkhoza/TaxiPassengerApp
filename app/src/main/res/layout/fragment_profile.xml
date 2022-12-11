@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="@color/white_smoke"
     android:padding="10dp"
     tools:context=".ProfileFragment">
 
@@ -15,7 +15,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            >
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/profile_info"

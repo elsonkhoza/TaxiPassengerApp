@@ -1,5 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <style name="Theme.TaxiPassengerApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primary_color</item>
@@ -15,21 +16,8 @@
         <item name="android:windowLightStatusBar">true</item>
 
         <item name="android:navigationBarColor">@color/white</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/open_sans</item>
     </style>
-
-    <style name="Theme.TaxiPassengerApp.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/input_stoke_color_login</item>
-    </style>
-
-    <style name="Theme.TaxiPassengerApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.TaxiPassengerApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
